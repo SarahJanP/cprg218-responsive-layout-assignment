@@ -17,7 +17,6 @@ body{
     font-family:sans-serif
 }
 
-
 .header-container{
     background-color: #120323;
     color: #97bf04
@@ -26,7 +25,6 @@ body{
 figure img {
     border: solid 3px #d9043d;
 }
-
 
 aside{
     background-color: #97bf04;
@@ -38,17 +36,57 @@ footer{
     font-size: smaller;
 }
 
+figure img{
+    max-width: 100%;
+    height:auto;
+}
+
+
+
+/*=================MEDIA QUERIES======================*/
+
 /*----------------- MOBILE ------------------------*/
-@media screen, (max-width<768px) {
-    
+@media screen and (max-width:768px) {
+    body{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .header-container img{
+        max-width: 20%;
+    }
+
+
 }
 
 
+/*================TABLET===============================*/
+@media screen and (min-width:769px) and (max-width:1000px) {
 
-@media screen,(min-width:769px) and (max-width:1000px) {
+    main figure{
+        justify-content: space-around;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    main figure img{
+        max-width: 40%;
+    }
+    main figure figcaption{
+        max-width: 40%;
+    }
 
 }
 
-@media screen, (min-width:1001px){
-    
+@media screen and (min-width:1001px){
+
 }
