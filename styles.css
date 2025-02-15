@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Client Notes
+Some design notes have been provided by the client:
+
+header background color & name of animal: #120323
+sidebar background colour: #97bf04
+footer background colour & image frame: #d9043d
+The puffin image should never be cut off as it is a key element on the page
+The site uses a sans-serif font
+Any spacing not defined can be estimated, but should allow for fluid and responsive design*/
+
+
+body{
+    font-family:sans-serif
+}
+
+
+.header-container{
+    background-color: #120323;
+    color: #97bf04
+}
+
+figure img {
+    border: solid 3px #d9043d;
+}
+
+
+aside{
+    background-color: #97bf04;
+}
+
+footer{
+    background-color: #d9043d;
+    color:white;
+    font-size: smaller;
+}
+
+/*----------------- MOBILE ------------------------*/
+@media screen, (max-width<768px) {
+    
+}
+
+
+
+@media screen,(min-width:769px) and (max-width:1000px) {
+
+}
+
+@media screen, (min-width:1001px){
+    
+}
