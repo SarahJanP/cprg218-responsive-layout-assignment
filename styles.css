@@ -56,6 +56,7 @@ and take up 100% of the width of the page--*/
         flex-direction: column;
         max-width: 100%;
         margin: 0;
+
     }
 
     .header-container{
@@ -105,21 +106,71 @@ and take up 100% of the width of the page--*/
 
 
 /*================TABLET===============================*/
+/*The logo and company name should be on the same line
+The puffin image should be displayed at a smaller size - no wider than 300px
+The puffin image and the caption for it should be displayed next to each other using flexbox
+The sidebar should still appear at the bottom of the page, taking 100% of the horizontal width*/
 @media screen and (min-width:769px) and (max-width:1000px) {
 
-    main figure{
-        justify-content: space-around;
-        display:flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+    body{
+        margin:0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .header-container{
+        display: flex;
         align-items: center;
+        justify-content: center;
+    }
+    .header-container img{
+        margin: 1em 1em ;
+    }
+    main{
+        margin:0 0;
+    }
+
+    main figure{
+        display:flex;
+        align-items: center;
+        margin: 0 0;
+        max-height: 500px;
     }
 
     main figure img{
-        max-width: 40%;
+        max-width:300px;
+        height: auto;
+        margin: 2rem 1rem;
+        border: solid #d9043d 5px;
     }
     main figure figcaption{
-        max-width: 40%;
+        max-height: 500px;
+
+    }
+    figcaption h2 {
+        margin: 0 0;
+    } 
+
+    figcaption p{
+        padding: 10px;
+        margin: 0 0;
+        font-size: medium;
+    }
+    h3{
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    aside {
+        padding: 20px 20px;
+        align-items: center;
+        align-content: center;
+    }
+
+    footer{
+        text-align: center;
+        padding: 2rem 1.5rem;
     }
 
 }
