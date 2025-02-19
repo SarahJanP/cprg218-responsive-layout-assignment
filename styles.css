@@ -46,10 +46,16 @@ figure img{
 /*=================MEDIA QUERIES======================*/
 
 /*----------------- MOBILE ------------------------*/
+/*--The logo and company name should be on separate lines
+All content should be in one column
+The puffin image should be centred horizontally 
+and take up 100% of the width of the page--*/
 @media screen and (max-width:768px) {
     body{
         display:flex;
         flex-direction: column;
+        max-width: 100%;
+        margin: 0;
     }
 
     .header-container{
@@ -60,7 +66,38 @@ figure img{
     }
 
     .header-container img{
-        max-width: 20%;
+        max-width: 30%;
+        justify-self: center;
+        padding: 1em;
+    }
+    .header-container h1{
+        text-align: center;
+        font-size:x-large;  
+    }
+    main{
+        margin: 0 0;
+    }
+    main figure{
+        text-align: center;
+        margin: 0 0;
+    }
+    main figure img{
+        max-width: 100%;
+    }
+    figure figcaption{
+        text-align: left;
+        margin: 0 2.5rem
+    }
+    aside{
+        width: 100%;
+        
+        padding: 10px 10px;
+
+    }
+
+    footer{
+        text-align: center;
+        padding:10px 10px;
     }
 
 
