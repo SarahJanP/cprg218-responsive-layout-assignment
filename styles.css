@@ -22,10 +22,6 @@ body{
     color: #97bf04
 }
 
-figure img {
-    border: solid 3px #d9043d;
-}
-
 aside{
     background-color: #97bf04;
 }
@@ -39,6 +35,11 @@ footer{
 figure img{
     max-width: 100%;
     height:auto;
+    border: solid 3px #d9043d;
+}
+
+figure figcaption h2{
+    color: #120323;
 }
 
 
@@ -174,7 +175,82 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
     }
 
 }
-
+/*=================DESKTOP=====================*/
+/*3 column layout with the sidebar on the right*/
 @media screen and (min-width:1001px){
+    body{
+        margin:0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .header-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-container img{
+        margin: 1em 1em ;
+    }
+    main{
+        margin:0 0;
+    }
+
+    main figure{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0;
+        max-height: 500px;
+
+    }
+    #container{
+        display:flex;
+    }
+
+    main figure img{
+        max-width:300px;
+        height: auto;
+        margin: 2rem 1rem;
+        border: solid #d9043d 5px;
+    }
+    main figure figcaption{
+        max-height: 500px;
+
+    }
+    figcaption h2 {
+        margin: 0 0;
+    } 
+
+    figcaption p{
+        padding: 10px;
+        margin: 0 0;
+        font-size: medium;
+    }
+    h3{
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    aside {
+        display:flex;
+        flex-direction: column;
+        padding: 20px 20px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        align-content: center;
+        max-width: 25%;
+    }
+
+    aside h3{
+        text-align: left;
+    }
+
+    footer{
+        text-align: center;
+        padding: 2rem 1.5rem;
+    }
 
 }
