@@ -14,7 +14,7 @@ Any spacing not defined can be estimated, but should allow for fluid and respons
 
 
 body{
-    font-family:sans-serif
+    font-family:sans-serif;
 }
 
 .header-container{
@@ -29,7 +29,8 @@ aside{
 footer{
     background-color: #d9043d;
     color:white;
-    font-size: smaller;
+    font-size: small;
+
 }
 
 figure img{
@@ -46,18 +47,17 @@ figure figcaption h2{
 
 /*=================MEDIA QUERIES======================*/
 
-/*----------------- MOBILE ------------------------*/
-/*--The logo and company name should be on separate lines
+/*==========================MOBILE ===========================*/
+/*-=The logo and company name should be on separate lines
 All content should be in one column
 The puffin image should be centred horizontally 
-and take up 100% of the width of the page--*/
+and take up 100% of the width of the page=-*/
 @media screen and (max-width:768px) {
     body{
         display:flex;
         flex-direction: column;
         max-width: 100%;
         margin: 0;
-
     }
 
     .header-container{
@@ -85,6 +85,7 @@ and take up 100% of the width of the page--*/
     }
     main figure img{
         max-width: 100%;
+        border: solid 5px #d9043d;
     }
     figure figcaption{
         text-align: left;
@@ -92,7 +93,6 @@ and take up 100% of the width of the page--*/
     }
     aside{
         width: 100%;
-        
         padding: 10px 10px;
 
     }
@@ -100,13 +100,15 @@ and take up 100% of the width of the page--*/
     footer{
         text-align: center;
         padding:10px 10px;
+        margin-top: .8rem;
+        padding: 2rem 1rem;
     }
 
 
 }
 
 
-/*================TABLET===============================*/
+/*=================================TABLET==========================================*/
 /*The logo and company name should be on the same line
 The puffin image should be displayed at a smaller size - no wider than 300px
 The puffin image and the caption for it should be displayed next to each other using flexbox
@@ -137,6 +139,7 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
         align-items: center;
         margin: 0 0;
         max-height: 500px;
+        margin-right: 2rem;
     }
 
     main figure img{
@@ -151,11 +154,15 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
     }
     figcaption h2 {
         margin: 0 0;
+        padding-left: 10px;
+        margin-top: 1rem;
+
     } 
 
     figcaption p{
         padding: 10px;
         margin: 0 0;
+        margin-bottom: 1rem;
         font-size: medium;
     }
     h3{
@@ -170,12 +177,15 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
     }
 
     footer{
+        font-size:15px;
         text-align: center;
         padding: 2rem 1.5rem;
+        margin-top: .8rem;
+
     }
 
 }
-/*=================DESKTOP=====================*/
+/*================================DESKTOP=========================================*/
 /*3 column layout with the sidebar on the right*/
 @media screen and (min-width:1001px){
     body{
@@ -191,7 +201,7 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
         justify-content: center;
     }
     .header-container img{
-        margin: 1em 1em ;
+        margin: 1em 1em;
     }
     main{
         margin:0 0;
@@ -207,6 +217,7 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
     }
     #container{
         display:flex;
+        align-items: center;
     }
 
     main figure img{
@@ -221,6 +232,7 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
     }
     figcaption h2 {
         margin: 0 0;
+        padding-left: 10px;
     } 
 
     figcaption p{
@@ -238,7 +250,7 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
         flex-direction: column;
         padding: 20px 20px;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-left: 1rem;
 
         align-content: center;
         max-width: 25%;
@@ -250,7 +262,10 @@ The sidebar should still appear at the bottom of the page, taking 100% of the ho
 
     footer{
         text-align: center;
-        padding: 2rem 1.5rem;
+        padding: 2rem 2rem;
+        font-size: medium;
+        margin-top: .8rem;
+
     }
 
 }
